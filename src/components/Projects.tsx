@@ -9,7 +9,7 @@ export default function Projects() {
       tags: ["Vite", "TypeScript", "Shadcn UI", "React", "Node.js", "PostgreSQL", "Prisma"],
       screenshot: "/timeline.jpeg",
       github: "https://github.com/lemesvini/timeline-app",
-      website: "https://horizonenglishgroup.com"
+      website: "https://timeline-app-psi.vercel.app/"
     },
     {
       title: "BookMarker",
@@ -120,7 +120,7 @@ export default function Projects() {
                         className="flex items-center gap-2 px-6 py-3 rounded-xl backdrop-blur-sm bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-400/30 text-white hover:from-blue-500/30 hover:to-purple-500/30 hover:border-blue-400/50 transition-all duration-200 group/btn"
                       >
                         <FaExternalLinkAlt className="text-sm group-hover/btn:scale-110 transition-transform duration-200" />
-                        <span className="font-medium">Live Demo</span>
+                        <span className="font-medium">Website</span>
                       </a>
                     )}
                   </div>

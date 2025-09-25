@@ -50,7 +50,7 @@ const ConnectSection: React.FC = () => {
               </a>
 
               <a 
-                href="https://www.linkedin.com/in/vinicius-lemes-ds/" 
+                href="https://www.linkedin.com/in/felipe-motta-b472a4201/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 text-white/70 hover:text-white transition-colors group"
