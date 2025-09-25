@@ -54,7 +54,7 @@ export default function BackgroundGradientAnimationDemo() {
 
           <div className="mt-12 pointer-events-auto">
             <a 
-              href="https://timeline-app-psi.vercel.app/" 
+              href="https://www.last.fm/user/feleipmtoat/" 
               className="inline-block group hover:scale-110 transition-all duration-300"
             >
               <div className="w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
