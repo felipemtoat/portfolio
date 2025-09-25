@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-lg bg-black/40 border border-white/10;
+  }
+
+  .glass-card {
+    @apply glass rounded-xl shadow-lg;
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+  }
+  
+  .heading-gradient {
+    @apply bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent;
+  }
+
+  .developer-gradient {
+    @apply bg-gradient-to-r from-blue-400 via-purple-500 bg-clip-text text-transparent;
+  }
+  
+  .nav-item {
+    @apply relative px-3 py-2 text-base font-medium transition-colors hover:text-primary/80;
+  }
+  
+  .nav-item::after {
+    content: '';
+    @apply absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300;
+  }
+  
+  .nav-item:hover::after {
+    @apply w-full;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #121212;
+  background-image: 
+    radial-gradient(circle at 25% 15%, rgba(50, 50, 180, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 75% 85%, rgba(50, 180, 180, 0.03) 0%, transparent 40%);
+  background-attachment: fixed;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  @apply backdrop-blur-lg bg-white/5 border border-white/10;
+}
+
+.glass-card {
+  @apply glass rounded-xl shadow-lg;
+}
+
+/* Animation utilities */
+.floating {
+  animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+:root {
+  --animate-first: moveVertical 30s ease infinite;
+  --animate-second: moveInCircle 20s reverse infinite;
+  --animate-third: moveInCircle 40s linear infinite;
+  --animate-fourth: moveHorizontal 40s ease infinite;
+  --animate-fifth: moveInCircle 20s ease infinite;
+}
+
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+  50% {
+    transform: translateX(50%) translateY(10%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+}
+
+@keyframes moveInCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveVertical {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
