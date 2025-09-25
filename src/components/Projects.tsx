@@ -21,7 +21,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-20 px-4">
+    <section id="projects" className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-20 px-4">
       <div className="max-w-6xl mx-auto">
         
         {/* Section Header */}
@@ -143,7 +143,7 @@ export default function Projects() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-1">See All Projects</h3>
-                  <p className="text-white/70">Explore my complete GitHub repository</p>
+                  
                 </div>
               </div>
             </a>

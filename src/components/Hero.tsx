@@ -52,28 +52,32 @@ export default function BackgroundGradientAnimationDemo() {
             </span>
           </p>
 
-          {/* Tech Stack Indicators */}
-          <div className="mt-8 flex justify-center items-center space-x-6">
-            <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
-                <div className="w-4 h-4 bg-gradient-to-br from-blue-400 to-blue-600 rounded-sm"></div>
-              </div>
-              <div className="w-8 h-8 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
-                <div className="w-4 h-4 bg-gradient-to-br from-green-400 to-green-600 rounded-sm"></div>
-              </div>
-              <div className="w-8 h-8 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
-                <div className="w-4 h-4 bg-gradient-to-br from-purple-400 to-purple-600 rounded-sm"></div>
-              </div>
-            </div>
-          </div>
+         
 
-          {/* Floating Action Hint */}
-          <div className="mt-12 animate-bounce">
+          {/* Last.fm Link to Knowledge */}
+          <div className="mt-12 pointer-events-auto">
+            <a 
+              href="#knowledge" 
+              className="inline-block group hover:scale-110 transition-all duration-300"
+            >
+              <div className="w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
+                <svg 
+                  viewBox="0 0 24 24" 
+                  className="w-6 h-6 text-white/70 group-hover:text-white transition-colors"
+                  fill="currentColor"
+                >
+                  <path d="M10.599 17.211l-.881-1.277s-1.429 1.596-3.573 1.596c-1.901 0-3.248-1.646-3.248-4.289 0-3.381 1.704-4.591 3.381-4.591 2.407 0 3.18 1.561 3.841 3.561l.871 2.733c.871 2.644 2.515 4.771 7.251 4.771 3.391 0 5.687-1.041 5.687-3.783 0-2.22-1.262-3.373-3.617-3.914l-1.754-.384c-1.209-.275-1.561-.771-1.561-1.597 0-.936.736-1.487 1.946-1.487 1.319 0 2.031.495 2.144 1.679l2.741-.33c-.22-2.466-1.899-3.476-4.663-3.476-2.407 0-4.771 1.21-4.771 4.065 0 1.926.936 3.152 3.286 3.711l1.946.441c1.451.33 1.936.916 1.936 1.711 0 1.021-.991 1.441-2.87 1.441-2.784 0-3.841-1.457-4.498-3.476l-.907-2.733c-1.154-3.571-2.973-4.896-6.614-4.896-4.023 0-6.153 2.54-6.153 6.868 0 4.17 2.144 6.416 5.999 6.416 3.099 0 4.597-1.457 4.597-1.457z"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-12 animate-bounce hidden md:flex">
             <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
               <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
             </div>
           </div>
-        </div>
       </div>
     </BackgroundGradientAnimation>
   );

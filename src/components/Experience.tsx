@@ -124,7 +124,7 @@ export default function Experience() {
   ];
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-20 px-4">
+    <section id="experience" className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-20 px-4">
       <div className="max-w-6xl mx-auto">
         
         {/* Section Header */}
@@ -137,7 +137,7 @@ export default function Experience() {
             <div className="h-px bg-gradient-to-r from-transparent via-white/40 to-transparent w-16"></div>
           </div>
           <p className="text-lg text-white/70 max-w-2xl mx-auto mb-3">
-            My professional journey in software development
+            My journey in software development
           </p>
           <div className="w-3 h-3 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full mx-auto animate-pulse"></div>
         </div>

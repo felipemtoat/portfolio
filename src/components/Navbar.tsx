@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import devinelogo from "../assets/devine-white.png";
-import lemesvinilogo from "/public/lemesvinilogo.png";
+import fmLogo from "/public/LOGO.svg";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,14 +42,14 @@ const Navbar = () => {
         >
           { isScrolled ? (
             <>
-            <img src={lemesvinilogo} alt="Lemesvini Logo" className="h-8 w-auto  rounded-md " />
+            <img src={fmLogo} alt="Felipe Motta Logo" className="h-8 w-auto  rounded-md " />
             {/* <span className="text-2xl font-bold">lemesvini</span> */}
             </> 
             
           ) : (
             <>
-            <img src={lemesvinilogo} alt="Lemesvini Logo" className="h-8 w-auto  rounded-md" />
-            <span className="text-lg font-bold">lemesvini</span>
+            <img src={fmLogo} alt="Felipe Motta Logo" className="h-8 w-auto  rounded-md" />
+            <span className="text-lg font-bold">Felipe Motta</span>
             </>
           )}
         </motion.a>
@@ -74,7 +73,7 @@ const Navbar = () => {
         </nav>
 
         <motion.a
-          href="https://github.com/lemesvini"
+          href="https://github.com/felipemtoat"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:flex items-center px-4 py-2 rounded-full glass text-sm font-medium transition-all hover:bg-white/10"
@@ -99,7 +98,7 @@ const Navbar = () => {
           GitHub
         </motion.a>
 
-        <button className="md:hidden p-2 text-white" onClick={toggleMobileMenu}>
+        {/* <button className="md:hidden p-2 text-white" onClick={toggleMobileMenu}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -124,11 +123,11 @@ const Navbar = () => {
               </>
             )}
           </svg>
-        </button>
+        </button> */}
       </div>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
+      {/* {isMobileMenuOpen && (
         <motion.div
           className="md:hidden absolute top-full left-0 right-0 bg-black"
           initial={{ opacity: 0, y: -10 }}
@@ -172,7 +171,7 @@ const Navbar = () => {
               Projects
             </a>
             <a
-              href="https://github.com/devine-studio"
+              href="https://github.com/felipemtoat"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center px-4 py-2 rounded-full glass text-sm font-medium transition-all hover:bg-white/10"
@@ -197,7 +196,7 @@ const Navbar = () => {
             </a>
           </div>
         </motion.div>
-      )}
+      )} */}
     </motion.header>
   );
 };

@@ -39,14 +39,14 @@ export default function Toolkit() {
         { name: "GIMP", icon: <SiGimp className="text-gray-300" /> },
         { name: "Linux", icon: <FaLinux className="text-yellow-400" /> },
         { name: "Ubuntu Server", icon: <SiUbuntu className="text-orange-400" /> },
-        { name: "Final Cut Pro", icon: <div className="w-6 h-6 bg-gradient-to-br from-gray-300 to-gray-400 rounded flex items-center justify-center text-xs font-bold text-black">FC</div> },
+        { name: "Final Cut Pro", icon: <img src="/finalcut.png" alt="Final Cut Pro" className="w-6 h-6 object-contain" /> },
         { name: "Vegas Pro", icon: <SiVegas className="text-blue-400" /> },
       ],
     },
   ];
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-20 px-4">
+    <section id="toolkit" className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-20 px-4">
       <div className="max-w-6xl mx-auto">
         
         {/* Section Header */}
@@ -110,23 +110,8 @@ export default function Toolkit() {
             </div>
           ))}
         </div>
+</div>
 
-        {/* Bottom Section */}
-        <div className="text-center mt-16">
-          <div className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-2xl p-8 max-w-2xl mx-auto">
-            <p className="text-white/80 text-lg leading-relaxed">
-              Always exploring new technologies and expanding my toolkit to create 
-              <span className="bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent font-semibold"> innovative solutions</span> 
-              and deliver exceptional user experiences.
-            </p>
-            <div className="mt-6 flex justify-center items-center space-x-2">
-              <div className="w-2 h-2 bg-white/40 rounded-full animate-bounce"></div>
-              <div className="w-2 h-2 bg-white/40 rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
-              <div className="w-2 h-2 bg-white/40 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }

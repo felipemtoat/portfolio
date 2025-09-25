@@ -19,8 +19,8 @@ const ConnectSection: React.FC = () => {
         
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left side - Contact Information */}
-          <div className="flex-1 bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
-            <div className="space-y-6">
+          <div className="flex-1 bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 flex items-center justify-center">
+            <div className="space-y-6 w-full">
               <a 
                 href="mailto:felipesoldatellimotta@gmail.com" 
                 className="flex items-center gap-4 text-white/70 hover:text-white transition-colors group"
@@ -66,20 +66,18 @@ const ConnectSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Right side - Create Something Amazing Card */}
-          <div className="flex-1">
-            <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 h-full flex flex-col items-center justify-center text-center border border-white/10">
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-400/20 to-purple-600/20 border border-white/10 flex items-center justify-center mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-white/70" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-4l-4 4-4-4z" />
-                </svg>
-              </div>
-              <h3 className="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-white">Let's Create Something Amazing</h3>
-              <div className="flex gap-4">
-                <span className="px-6 py-2 bg-gradient-to-br from-blue-400/20 to-purple-600/20 rounded-full text-white/70 border border-white/10">⌨️ Code</span>
-                <span className="px-6 py-2 bg-gradient-to-br from-blue-400/20 to-purple-600/20 rounded-full text-white/70 border border-white/10">🎨 Design</span>
-              </div>
+          {/* Right side - Logo and Name */}
+          <div className="flex-1 bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 flex flex-col items-center justify-center space-y-6">
+            <div className="flex-1 flex items-center justify-center">
+              <img 
+                src="/LOGO.svg" 
+                alt="Logo" 
+                className="w-auto h-24 md:h-32 lg:h-40 object-contain filter brightness-100"
+              />
             </div>
+            <h3 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-white">
+              Felipe Motta
+            </h3>
           </div>
         </div>
       </div>
